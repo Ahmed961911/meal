@@ -73,7 +73,7 @@ console.log(ingrediants);
         
 <div className='w-[30%] bg-white rounded-xl px-3 ms-6 pt-6 h-full'>
  <h2 className='text-3xl font-bold pb-2 border-b-4 border-[#E5E7EB] font-serif mb-6'>Ingredients</h2>
- {ingrediants?.map((eng)=>(eng.ing? <div className='flex flex-wrap content-between gap-x-10 pb-2 mb-4 border-b-2 border-[#E5E7EB]'>
+ {ingrediants?.map((eng)=>(eng.ing? <div key={eng.ing} className='flex flex-wrap content-between gap-x-10 pb-2 mb-4 border-b-2 border-[#E5E7EB]'>
     <span className='w-[40%]'>{eng.ing}:</span>
 <span className='text-right w-[40%]'>{eng.mes}</span>
 </div>:null))}
